@@ -1,0 +1,28 @@
+
+
+var app = express();
+app.use(
+    session({
+        secret: "secret",
+        resave: true,
+        saveUninitialized: true,
+    })
+);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.get("/", function (request, response) {
+    response.sendFile(path.join(__dirname + "/index.html"));
+});
+app.use(express.static(__dirname + '/resources'));
+
+
+
+app.get("/home", function (request, response) {
+    if (request.session.loggedin) {
+        response.send("Welcome back, " + request.session.username + "!");
+    } else {
+        response.send("Please login to view this page!");
+    }
+    response.end();
+});

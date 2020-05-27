@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smac System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="icon" href="resources/images/SMAC.jpeg">
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img style="height:60px;margin-right:300px"
+                src="resources/images/SMAC.jpeg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav> -->
+
+    <div class="img-banner">
+        <!-- <div class="row">
+            <div class="col-md col-lg col-sm"></div>
+            <div class="col-md col-lg col-sm"></div>
+            <div class="col-md col-lg col-sm"><img class="img-topo" src="resources/images/SMAC.jpeg"></div>
+            <div class="col-md col-lg col-sm"></div>
+            <div class="col-md col-lg col-sm"></div>
+        </div> -->
+        <div class="text-banner">
+            <div class="login-form">
+                <form action="auth" method="POST">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="resources/images/SMAC.jpeg">
+                            <h3>Login para acessar</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group"><input type="text" id="login" name="login" class="form-control"
+                                    placeholder="Login" required></div>
+                            <div class="form-group">
+                                <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="btnAcessar" name="btnAcessar" class="btn btn-info"
+                                    value="Logar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../server.js"></script>
+</body>
+
+</html>
